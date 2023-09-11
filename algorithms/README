@@ -1,0 +1,16 @@
+This directory will contain all the algorithms, and their code snippets.
+
+Table of Contents
+1. ......... Search
+1.a. ........... Linear Search
+1.b. ........... Binary Search
+1.c. ........... Jump Search
+2. ......... Sort
+2.a. ........... Bubble Sort
+2.b. ........... Selection Sort
+2.c. ........... Merge Sort
+2.d. ........... Quick Sort
+3. ......... Recursion
+3.a. ........... Sum of Array elements
+3.b. ........... Fibonacci series
+3.c. ........... Factorial
