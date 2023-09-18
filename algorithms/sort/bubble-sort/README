@@ -1,1 +1,132 @@
 This will contain snippets pertaining to Bubble Sort
+
+This sorting algorithm is comparison-based algorithm in which each pair of adjacent elements is compared and the elements are swapped if they are not in order. This algorithm is not suitable for large data sets as its average and worst case complexity are of Ο(n2) where n is the number of items.
+
+## Example
+
+14 , 33 , 27 , 35 , 10
+
+##### First run:
+
+i - 
+pointer 1 => 14
+pointer 2 => 33
+No interchange required
+Result - 14 , 33 , 27 , 35 , 10
+
+ii - 
+pointer 1 => 33
+pointer 2 => 27
+Interchange required
+Result - 14 , 27 , 33 , 35, 10
+
+iii - 
+pointer 1 => 33
+pointer 2 => 35
+No interchange required
+Result - 14 , 27 , 33 , 35, 10
+
+iv - 
+pointer 1 => 35
+pointer 2 => 10
+Interchange required
+Result - 14 , 27 , 33 , 10, 35
+
+##### Second run:
+
+i - 
+pointer 1 => 14
+pointer 2 => 27
+No interchange required
+Result - 14 , 27 , 33 , 10, 35
+
+ii - 
+pointer 1 => 27
+pointer 2 => 33
+No interchange required
+Result - 14 , 27 , 33 , 10, 35
+
+iii - 
+pointer 1 => 33
+pointer 2 => 10
+Interchange required
+Result - 14 , 27 , 10 , 33, 35
+
+iv - 
+pointer 1 => 33
+pointer 2 => 35
+No interchange required
+Result - 14 , 27 , 10 , 33, 35
+
+##### Third run:
+
+i - 
+pointer 1 => 14
+pointer 2 => 27
+No interchange required
+Result - 14 , 27 , 10 , 33, 35
+
+ii - 
+pointer 1 => 27
+pointer 2 => 10
+Interchange required
+Result - 14 , 10 , 27 , 33, 35
+
+iii - 
+pointer 1 => 27
+pointer 2 => 33
+No interchange required
+Result - 14 , 10 , 27 , 33, 35
+
+iv - 
+pointer 1 => 33
+pointer 2 => 35
+No interchange required
+Result - 14 , 10 , 27 , 33, 35
+
+##### Fourth run:
+
+i - 
+pointer 1 => 14
+pointer 2 => 10
+Interchange required
+Result - 10 , 14 , 27 , 33, 35
+
+ii - 
+pointer 1 => 14
+pointer 2 => 27
+No interchange required
+Result - 10 , 14 , 27 , 33, 35
+
+iii - 
+pointer 1 => 27
+pointer 2 => 33
+No interchange required
+Result - 10 , 14 , 27 , 33, 35
+
+iv - 
+pointer 1 => 33
+pointer 2 => 35
+No interchange required
+Result - 10 , 14 , 27 , 33, 35
+
+Fifth run will not have any interchanges, as all are sorted => which is the stop condition.
+
+## Algorithm:
+
+begin BubbleSort(list)
+
+   for all elements of list
+      if list[i] > list[i+1]
+         swap(list[i], list[i+1])
+      end if
+   end for
+   
+   return list
+   
+end BubbleSort
+
+## Complexity:
+
+Time: 
+Space: 
